@@ -1,0 +1,11 @@
+.message{
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+    -fx-text-fill: white;
+}
+
+.answer{
+    -fx-background-color: green;
+    -fx-text-fill: black;
+}
