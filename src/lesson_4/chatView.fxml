@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?scenebuilder-stylesheet css/styles.css?>
+
+<?import javafx.scene.layout.BorderPane?>
+<VBox xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_4.ChatController">
+    <stylesheets><URL value="@css/styles.css" /> </stylesheets>
+    <ScrollPane fx:id="scrollPane" vbarPolicy="ALWAYS" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+        <VBox fx:id="box"/>
+    </ScrollPane>
+    <HBox>
+        <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение.." HBox.hgrow="ALWAYS" />
+        <Button fx:id="btn" onAction="#sendMsg" text="Send" />
+    </HBox>
+
+</VBox>
