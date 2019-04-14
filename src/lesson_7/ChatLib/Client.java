@@ -59,7 +59,7 @@ public class Client {
     public void sendMessage(String text){
         if(socket != null){
             try {
-                Message.serialization(new TextMessage(login, text), socket.getOutputStream());
+                Message.serialization(new TextMessage(login, text, null), socket.getOutputStream());
             } catch (IOException e) {
                 loggerHandler.accept(e.getMessage());
             }
